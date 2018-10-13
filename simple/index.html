@@ -217,16 +217,16 @@ function loaded () {
 document.getElementById('scroller').addEventListener('touchmove', function (e) { e.preventDefault(); }, {passive: false});
 
 document.getElementById('changesize').addEventListener('click',function(){
-	if(document.getElementById('wrapper').style.height == '100%') {
-		document.getElementById('wrapper').style.height = '50%';
-		document.getElementById('wrapper').style.top = '50%';
-		document.getElementById('myheader').style.top = '50%';
-	} else {
-		document.getElementById('wrapper').style.height = '100%';
-		document.getElementById('myheader').style.top = '0';
-		document.getElementById('wrapper').style.top = '0'
-	}
-	setTimeout(function(){myScroll.refresh()},600);
+    if(document.getElementById('wrapper').style.height == '100%') {
+        document.getElementById('wrapper').style.height = '50%';
+        document.getElementById('wrapper').style.top = '50%';
+        document.getElementById('myheader').style.top = '50%';
+    } else {
+        document.getElementById('wrapper').style.height = '100%';
+        document.getElementById('myheader').style.top = '0';
+        document.getElementById('wrapper').style.top = '0'
+    }
+        setTimeout(function(){myScroll.refresh()},600);
 
 })
 
